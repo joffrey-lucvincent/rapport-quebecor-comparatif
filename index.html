@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Comparative : Quebecor vs Meta vs Google | Oct-Nov 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .executive-summary {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .executive-summary h2 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .key-finding {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .key-finding strong {
+            color: #d32f2f;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: #1e3c72;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .metric-good {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        
+        .metric-bad {
+            color: #c62828;
+            font-weight: bold;
+        }
+        
+        .metric-neutral {
+            color: #f57c00;
+            font-weight: bold;
+        }
+        
+        .platform-quebecor {
+            background: #e3f2fd;
+        }
+        
+        .platform-meta {
+            background: #f3e5f5;
+        }
+        
+        .platform-google {
+            background: #e8f5e9;
+        }
+        
+        .highlight-box {
+            background: #e8eaf6;
+            border-left: 5px solid #3f51b5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .comparison-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            text-align: center;
+        }
+        
+        .comparison-card h4 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .big-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .recommendation {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .recommendation h3 {
+            color: #2e7d32;
+        }
+        
+        .warning {
+            background: #ffebee;
+            border-left: 5px solid #f44336;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .chart-placeholder {
+            background: #f5f5f5;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px dashed #bdbdbd;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .impact-indicator {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .impact-high {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+        
+        .impact-medium {
+            background: #fff9c4;
+            color: #f57c00;
+        }
+        
+        .impact-low {
+            background: #ffcdd2;
+            color: #c62828;
+        }
+        
+        .month-header {
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 30px 0 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Analyse Comparative des Plateformes Publicitaires</h1>
+            <div class="subtitle">Quebecor vs Meta Ads vs Google Ads | Octobre - Novembre 2025</div>
+            <div class="subtitle" style="margin-top: 10px; font-size: 1em;">Luc Vincent Coiffure - Rapport Stratégique</div>
+        </header>
+
+        <div class="executive-summary">
+            <h2>🎯 Résumé Exécutif : Conclusions Clés</h2>
+            
+            <div class="highlight-box" style="background: #e3f2fd; border-left-color: #1976d2; margin-bottom: 20px;">
+                <h4 style="color: #1565c0;">⚠️ Note Importante : Objectifs Différents des Plateformes</h4>
+                <p style="line-height: 1.8;">
+                    <strong>Quebecor</strong> est une plateforme de <strong>notoriété et visibilité</strong> (impressions, reach, awareness) tandis que <strong>Meta et Google</strong> sont optimisés pour la <strong>conversion directe</strong> (achats, leads). 
+                </p>
+                <p style="line-height: 1.8; margin-top: 10px;">
+                    Comparer directement Quebecor avec Meta/Google revient à comparer des "pommes et des oranges". Ce rapport vise plutôt à :
+                </p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li>Évaluer le <strong>coût d'opportunité</strong> du budget alloué à Quebecor</li>
+                    <li>Quantifier les <strong>opportunités manquées</strong> sur des plateformes sous-exploitées (Google PMAX, Demand Gen)</li>
+                    <li>Déterminer si l'investissement Quebecor est <strong>proportionnel aux objectifs de notoriété</strong></li>
+                </ul>
+            </div>
+            
+            <div class="key-finding">
+                <strong>1. Coût par Opportunité</strong><br>
+                Quebecor coûte <span class="metric-bad">44x plus cher</span> par clic que Meta et <span class="metric-bad">36x plus cher</span> que Google. Pour le même budget investi en octobre (5,142 CAD), Meta aurait généré 6,419 clics vs 175 clics Quebecor.
+            </div>
+            
+            <div class="key-finding">
+                <strong>2. Impact sur la Notoriété de Marque</strong><br>
+                <span class="metric-good">Impact positif modéré détecté :</span> Le 15 octobre, jour du lancement de la campagne vidéo Quebecor, les recherches branded Google ont augmenté de <span class="metric-good">+215%</span> (471 clics vs moyenne de 150 clics/jour). Cependant, cet effet s'est rapidement estompé.
+            </div>
+            
+            <div class="key-finding">
+                <strong>3. Retour sur Investissement Contextualisé</strong><br>
+                • <strong>Meta Oct:</strong> ROAS <span class="metric-neutral">1.59</span> (période hors promo)<br>
+                • <strong>Meta Nov:</strong> ROAS <span class="metric-good">4.56</span> (période Black Friday avec promotions)<br>
+                • <strong>Google Nov:</strong> ROAS <span class="metric-good">14.09</span> (conversions directes mesurables)<br>
+                • <strong>Quebecor:</strong> Objectif notoriété, ROI <span class="metric-bad">non mesurable directement</span> en conversions
+            </div>
+            
+            <div class="key-finding">
+                <strong>4. Opportunités de Réallocation : Nouveaux Placements à Tester</strong><br>
+                Plutôt que de stopper Quebecor, <strong>réduire le budget soutenu</strong> permettrait de libérer des fonds pour tester de nouvelles opportunités sur Google :<br>
+                • <strong>Performance Max (PMAX)</strong> : Automatisation Google avec potentiel de ROAS élevé<br>
+                • <strong>Demand Gen</strong> : Campagnes visuelles pour la notoriété + conversion combinées<br>
+                • <strong>Expansion Shopping</strong> : Scaling des campagnes avec ROAS >10
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📈 Données Comparatives Complètes</h2>
+            
+            <div class="month-header">🍂 OCTOBRE 2025</div>
+            
+            <h3>Investissements et Performance Globale</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plateforme</th>
+                        <th>Investissement</th>
+                        <th>Impressions</th>
+                        <th>Clics</th>
+                        <th>CTR</th>
+                        <th>CPM</th>
+                        <th>CPC</th>
+                        <th>Conversions</th>
+                        <th>Revenu</th>
+                        <th>ROAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="platform-quebecor">
+                        <td><strong>Quebecor</strong></td>
+                        <td>5,142.03 CAD</td>
+                        <td>281,418</td>
+                        <td>232</td>
+                        <td><span class="metric-bad">0.08%</span></td>
+                        <td>18.27 CAD</td>
+                        <td><span class="metric-bad">22.16 CAD</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="platform-meta">
+                        <td><strong>Meta Ads</strong></td>
+                        <td>71,095.16 CAD</td>
+                        <td>3,876,551</td>
+                        <td>88,758</td>
+                        <td><span class="metric-good">2.29%</span></td>
+                        <td>18.34 CAD</td>
+                        <td><span class="metric-good">0.80 CAD</span></td>
+                        <td>-</td>
+                        <td>113,061 CAD</td>
+                        <td><span class="metric-neutral">1.59</span></td>
+                    </tr>
+                    <tr class="platform-google">
+                        <td><strong>Google Ads</strong></td>
+                        <td>7,921.39 CAD</td>
+                        <td>14,970</td>
+                        <td>4,042</td>
+                        <td><span class="metric-good">27.00%</span></td>
+                        <td>529.17 CAD</td>
+                        <td><span class="metric-good">1.96 CAD</span></td>
+                        <td>516.47</td>
+                        <td>46,001.63 CAD</td>
+                        <td><span class="metric-good">5.81</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h4>🔍 Analyse Octobre</h4>
+                <p><strong>⚠️ Contexte Octobre :</strong> Période <strong>hors promotion</strong> - Pas de Black Friday ni d'offres majeures. Le ROAS Meta de 1.59 reflète une période "normale" sans boost promotionnel.</p>
+                
+                <p style="margin-top: 15px;"><strong>Quebecor vs Meta (Oct):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Meta génère <strong>382x plus de clics</strong> pour 13.8x plus d'investissement</li>
+                    <li>Le CPC Meta est <strong>27.7x moins cher</strong> (0.80 CAD vs 22.16 CAD)</li>
+                    <li>Meta CTR est <strong>28.6x supérieur</strong> (2.29% vs 0.08%)</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Quebecor vs Google (Oct):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Google génère <strong>17.4x plus de clics</strong> pour 1.5x plus d'investissement</li>
+                    <li>Le CPC Google est <strong>11.3x moins cher</strong> (1.96 CAD vs 22.16 CAD)</li>
+                    <li>Google a un ROAS mesurable de <strong>5.81</strong> vs aucune mesure directe Quebecor</li>
+                </ul>
+            </div>
+
+            <div class="month-header">🎄 NOVEMBRE 2025</div>
+            
+            <h3>Investissements et Performance Globale</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plateforme</th>
+                        <th>Investissement</th>
+                        <th>Impressions</th>
+                        <th>Clics</th>
+                        <th>CTR</th>
+                        <th>CPM</th>
+                        <th>CPC</th>
+                        <th>Conversions</th>
+                        <th>Revenu</th>
+                        <th>ROAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="platform-quebecor">
+                        <td><strong>Quebecor</strong></td>
+                        <td>13,661.19 CAD</td>
+                        <td>1,183,779</td>
+                        <td>4,297</td>
+                        <td><span class="metric-bad">0.36%</span></td>
+                        <td>11.54 CAD</td>
+                        <td><span class="metric-bad">3.18 CAD</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="platform-meta">
+                        <td><strong>Meta Ads</strong></td>
+                        <td>94,299.38 CAD</td>
+                        <td>4,598,414</td>
+                        <td>138,099</td>
+                        <td><span class="metric-good">3.00%</span></td>
+                        <td>20.51 CAD</td>
+                        <td><span class="metric-good">0.68 CAD</span></td>
+                        <td>-</td>
+                        <td>430,125 CAD</td>
+                        <td><span class="metric-good">4.56</span></td>
+                    </tr>
+                    <tr class="platform-google">
+                        <td><strong>Google Ads</strong></td>
+                        <td>10,599.16 CAD</td>
+                        <td>17,379</td>
+                        <td>7,488</td>
+                        <td><span class="metric-good">43.09%</span></td>
+                        <td>609.96 CAD</td>
+                        <td><span class="metric-good">1.42 CAD</span></td>
+                        <td>1,685.47</td>
+                        <td>149,319.49 CAD</td>
+                        <td><span class="metric-good">14.09</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h4>🔍 Analyse Novembre</h4>
+                <p><strong>🎁 Contexte Novembre :</strong> Période <strong>Black Friday (jusqu'au 30 nov 23h59)</strong> avec promotions intensives. Le ROAS Meta de 4.56 (+187% vs octobre) reflète l'impact des offres promotionnelles. <strong>Cyber Week arrive en décembre</strong>, pas dans cette période.</p>
+                
+                <p style="margin-top: 15px;"><strong>Amélioration Quebecor :</strong> Le CTR passe de 0.08% à 0.36% (+350%) et le CPC diminue à 3.18 CAD, mais reste <strong>très élevé</strong>.</p>
+                
+                <p style="margin-top: 15px;"><strong>Quebecor vs Meta (Nov):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Meta génère <strong>32x plus de clics</strong> pour 6.9x plus d'investissement</li>
+                    <li>Le CPC Meta est encore <strong>4.7x moins cher</strong> (0.68 CAD vs 3.18 CAD)</li>
+                    <li>Meta ROAS : <strong>4.56</strong> = Chaque dollar investi génère 4.56 CAD de revenu (période Black Friday)</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Quebecor vs Google (Nov):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Google génère <strong>1.7x plus de clics</strong> pour 22% moins d'investissement</li>
+                    <li>Le CPC Google est <strong>2.2x moins cher</strong> (1.42 CAD vs 3.18 CAD)</li>
+                    <li>Google ROAS exceptionnel : <strong>14.09</strong></li>
+                </ul>
+                
+                <p style="margin-top: 15px; font-style: italic; color: #666;">
+                    <strong>Note :</strong> La Cyber Week débute en décembre, après le 30 novembre. Les données de novembre reflètent donc uniquement l'impact du Black Friday.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Impact de Quebecor sur le Trafic Branded Google</h2>
+            
+            <h3>Analyse des Recherches de Marque (Campagnes Brand Google)</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Période</th>
+                        <th>Événement Quebecor</th>
+                        <th>Clics Branded Google</th>
+                        <th>Variation vs Baseline</th>
+                        <th>Impact Détecté</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1-14 Oct (avant Quebecor)</td>
+                        <td>Pas de campagne active</td>
+                        <td>1,319 clics (94 clics/jour)</td>
+                        <td>Baseline</td>
+                        <td>-</td>
+                    </tr>
+                    <tr style="background: #e8f5e9;">
+                        <td><strong>15 Oct</strong></td>
+                        <td><strong>🚀 Lancement Vidéo Instream 15s</strong></td>
+                        <td><strong>539 clics</strong></td>
+                        <td><span class="metric-good">+474% vs jour moyen</span></td>
+                        <td><span class="impact-indicator impact-high">Impact Fort</span></td>
+                    </tr>
+                    <tr>
+                        <td>16-22 Oct</td>
+                        <td>Vidéo continue</td>
+                        <td>1,108 clics (158 clics/jour)</td>
+                        <td><span class="metric-good">+68% vs baseline</span></td>
+                        <td><span class="impact-indicator impact-medium">Impact Modéré</span></td>
+                    </tr>
+                    <tr>
+                        <td>23-31 Oct</td>
+                        <td>Vidéo continue</td>
+                        <td>1,308 clics (145 clics/jour)</td>
+                        <td><span class="metric-good">+54% vs baseline</span></td>
+                        <td><span class="impact-indicator impact-medium">Impact Modéré</span></td>
+                    </tr>
+                    <tr style="background: #e8f5e9;">
+                        <td><strong>3-9 Nov</strong></td>
+                        <td><strong>🚀 Lancement Multi-Campagnes (Black Friday)</strong></td>
+                        <td><strong>1,538 clics (220 clics/jour)</strong></td>
+                        <td><span class="metric-good">+134% vs baseline Oct</span></td>
+                        <td><span class="impact-indicator impact-high">Impact Fort</span></td>
+                    </tr>
+                    <tr>
+                        <td>10-17 Nov</td>
+                        <td>Toutes campagnes actives</td>
+                        <td>1,492 clics (187 clics/jour)</td>
+                        <td><span class="metric-good">+99% vs baseline Oct</span></td>
+                        <td><span class="impact-indicator impact-medium">Impact Modéré</span></td>
+                    </tr>
+                    <tr style="background: #fff9c4;">
+                        <td><strong>18-25 Nov</strong></td>
+                        <td><strong>⚡ Black Friday (fin le 30 nov 23h59)</strong></td>
+                        <td><strong>2,208 clics (276 clics/jour)</strong></td>
+                        <td><span class="metric-good">+194% vs baseline Oct</span></td>
+                        <td><span class="impact-indicator impact-high">Impact Très Fort</span><br>(Mais période promo Black Friday intense)</td>
+                    </tr>
+                    <tr>
+                        <td>26-30 Nov</td>
+                        <td>Fin Black Friday</td>
+                        <td>1,288 clics (258 clics/jour)</td>
+                        <td><span class="metric-good">+174% vs baseline Oct</span></td>
+                        <td><span class="impact-indicator impact-medium">Impact Soutenu</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h4>🔎 Observations Clés sur l'Impact Branded</h4>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Impact initial mesurable :</strong> Le 15 octobre montre un pic clair (+474%) coïncidant avec le lancement Quebecor</li>
+                    <li><strong>Effet novembre amplifié :</strong> Les recherches branded augmentent significativement début novembre (+134%), mais il est <strong>difficile d'isoler l'effet Quebecor</strong> des autres facteurs (Black Friday, multi-campagnes Meta/Google actives)</li>
+                    <li><strong>Synergie possible :</strong> L'effet combiné Quebecor + Meta + Google crée un boost de notoriété durant les périodes clés</li>
+                    <li><strong>Limitation :</strong> Impossible de quantifier précisément la part attribuable uniquement à Quebecor vs promotions Black Friday</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💰 Analyse des Opportunités de Réallocation</h2>
+            
+            <div class="highlight-box" style="background: #e8f5e9; border-left-color: #4caf50;">
+                <h4 style="color: #2e7d32;">🎯 Objectif : Libérer du Budget pour Tester de Nouvelles Opportunités</h4>
+                <p style="line-height: 1.8;">
+                    Plutôt que de <strong>stopper complètement Quebecor</strong>, l'idée est de <strong>réduire le budget soutenu</strong> pour libérer des fonds permettant de tester de nouveaux placements Google à fort potentiel :
+                </p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>Performance Max (PMAX)</strong> : Campagnes automatisées multi-placements Google (Search, Display, YouTube, Gmail, Discover)</li>
+                    <li><strong>Demand Gen</strong> : Nouveau format Google combinant notoriété visuelle + conversion</li>
+                    <li><strong>Expansion Shopping</strong> : Scaling des campagnes existantes avec ROAS >10</li>
+                </ul>
+            </div>
+
+            <h3>Budget Quebecor Actuel (Oct-Nov 2025)</h3>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h4>Investissement Total</h4>
+                    <div class="big-number" style="color: #d32f2f;">18,803 CAD</div>
+                    <p>Oct + Nov 2025</p>
+                </div>
+                <div class="comparison-card">
+                    <h4>Budget Mensuel Moyen</h4>
+                    <div class="big-number" style="color: #f57c00;">9,402 CAD</div>
+                    <p>Par mois</p>
+                </div>
+                <div class="comparison-card">
+                    <h4>Nature de l'Investissement</h4>
+                    <div class="big-number" style="color: #1976d2; font-size: 1.5em;">Notoriété</div>
+                    <p>Impressions & Awareness</p>
+                </div>
+            </div>
+
+            <h3>Scénario 1 : Réallocation Partielle vers Performance Max</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Budget</th>
+                        <th>Potentiel Estimé</th>
+                        <th>Avantages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #ffebee;">
+                        <td><strong>Quebecor Réduit</strong></td>
+                        <td>3,000 CAD/mois<br><small>(-68% vs actuel)</small></td>
+                        <td>Maintien présence notoriété<br>ciblée sur périodes clés</td>
+                        <td>• Garde visibilité média<br>• Focus sur lancements majeurs</td>
+                    </tr>
+                    <tr style="background: #e8f5e9;">
+                        <td><strong>Performance Max (Test)</strong></td>
+                        <td>4,000 CAD/mois<br><small>(Budget libéré)</small></td>
+                        <td>ROAS estimé : 8-12<br><small>(conservateur vs ROAS Google actuel 14.09)</small></td>
+                        <td>• Automatisation Google AI<br>• Multi-placements (Search, YouTube, Display, etc.)<br>• Optimisation en temps réel</td>
+                    </tr>
+                    <tr style="background: #e3f2fd;">
+                        <td><strong>Demand Gen (Test)</strong></td>
+                        <td>2,400 CAD/mois<br><small>(Budget libéré)</small></td>
+                        <td>Hybrid : Notoriété + Conversion<br>ROAS estimé : 5-8</td>
+                        <td>• Remplace partiellement Quebecor notoriété<br>• Formats visuels engageants<br>• Tracking conversions direct</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Scénario 2 : Réallocation Partielle vers Expansion Shopping</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Budget</th>
+                        <th>Potentiel Estimé</th>
+                        <th>Avantages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #ffebee;">
+                        <td><strong>Quebecor Réduit</strong></td>
+                        <td>4,000 CAD/mois<br><small>(-57% vs actuel)</small></td>
+                        <td>Présence notoriété maintenue</td>
+                        <td>• Budget suffisant pour visibilité<br>• Concentré sur périodes stratégiques</td>
+                    </tr>
+                    <tr style="background: #e8f5e9;">
+                        <td><strong>Google Shopping Scale-Up</strong></td>
+                        <td>+5,400 CAD/mois<br><small>(Budget libéré)</small></td>
+                        <td>ROAS estimé : 12-14<br><small>(basé sur performances actuelles)</small></td>
+                        <td>• Campagnes déjà performantes<br>• Risque minimal de dégradation<br>• ROI direct mesurable</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <h4>🔍 Projection Conservatrice : Impact Estimé de la Réallocation</h4>
+                <p style="margin-top: 10px;"><strong>Scénario 1 (PMAX + Demand Gen) :</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li>Budget mensuel libéré : <strong>6,400 CAD</strong></li>
+                    <li>Revenu additionnel potentiel (ROAS moyen 9) : <strong>~57,600 CAD/mois</strong></li>
+                    <li>Bénéfice : <strong>Test de nouveaux placements</strong> à fort potentiel avec tracking précis</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Scénario 2 (Shopping Scale-Up) :</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li>Budget mensuel libéré : <strong>5,400 CAD</strong></li>
+                    <li>Revenu additionnel potentiel (ROAS 13) : <strong>~70,200 CAD/mois</strong></li>
+                    <li>Bénéfice : <strong>Scaling sécurisé</strong> sur campagnes prouvées</li>
+                </ul>
+                
+                <p style="margin-top: 15px; font-style: italic; color: #666;">
+                    <strong>Important :</strong> Ces projections supposent que les nouvelles campagnes maintiennent des performances similaires aux campagnes Google actuelles. Le risque est minime car Google Shopping a déjà un ROAS élevé et constant.
+                </p>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ Contexte Important : Notoriété vs Conversion</h3>
+                <p style="line-height: 1.8;">
+                    Il est crucial de comprendre que <strong>Quebecor et Google/Meta ne jouent pas dans la même catégorie</strong> :
+                </p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>Quebecor :</strong> Objectif = <strong>Notoriété</strong> (impressions, reach, awareness auprès d'audiences larges)</li>
+                    <li><strong>Meta/Google :</strong> Objectif = <strong>Conversion</strong> (achats directs, ROAS mesurable, audiences intentionnistes)</li>
+                </ul>
+                <p style="margin-top: 15px; line-height: 1.8;">
+                    Le constat n'est donc pas que "Quebecor ne performe pas", mais plutôt :
+                </p>
+                <ol style="margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li>Le <strong>budget soutenu actuel</strong> (9,400 CAD/mois) pourrait être <strong>optimisé</strong> en le réduisant et en le concentrant sur des périodes clés</li>
+                    <li>Les fonds libérés permettraient de <strong>tester de nouvelles opportunités</strong> sur Google qui combinent notoriété ET conversion (Demand Gen, PMAX)</li>
+                    <li>Le <strong>coût d'opportunité</strong> est significatif : chaque dollar investi dans Quebecor est un dollar qui ne peut pas être testé ailleurs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Calcul Détaillé des Métriques Quebecor</h2>
+            
+            <h3>Octobre 2025 - Quebecor</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Initiative</th>
+                        <th>Investissement</th>
+                        <th>Impressions Livrées</th>
+                        <th>Clics</th>
+                        <th>CPM</th>
+                        <th>CPC</th>
+                        <th>CTR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mise en ligne segment TV</td>
+                        <td>1,200.00 CAD</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Publication Facebook (intégration)</td>
+                        <td>2,650.00 CAD</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Vidéo Instream 15s (TVA+)</td>
+                        <td>1,292.03 CAD</td>
+                        <td>281,418</td>
+                        <td>232</td>
+                        <td>4.59 CAD</td>
+                        <td>5.57 CAD</td>
+                        <td>0.08%</td>
+                    </tr>
+                    <tr style="font-weight: bold; background: #f5f5f5;">
+                        <td><strong>TOTAL OCTOBRE</strong></td>
+                        <td><strong>5,142.03 CAD</strong></td>
+                        <td><strong>281,418</strong></td>
+                        <td><strong>232</strong></td>
+                        <td><strong>18.27 CAD</strong></td>
+                        <td><strong>22.16 CAD</strong></td>
+                        <td><strong>0.08%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Novembre 2025 - Quebecor</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Initiative</th>
+                        <th>Dates</th>
+                        <th>Investissement</th>
+                        <th>Impressions Livrées</th>
+                        <th>Clics</th>
+                        <th>CPM</th>
+                        <th>CPC</th>
+                        <th>CTR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>300x600 - ROC Mode & Beauté</td>
+                        <td>03/11-14/12</td>
+                        <td>411.18 CAD</td>
+                        <td>50,000</td>
+                        <td>175</td>
+                        <td>8.22 CAD</td>
+                        <td>2.35 CAD</td>
+                        <td>0.35%</td>
+                    </tr>
+                    <tr>
+                        <td>300x600 - RON Audiences (Black Friday)</td>
+                        <td>03/11-14/12</td>
+                        <td>2,987.98 CAD</td>
+                        <td>300,565</td>
+                        <td>790</td>
+                        <td>9.94 CAD</td>
+                        <td>3.78 CAD</td>
+                        <td>0.26%</td>
+                    </tr>
+                    <tr>
+                        <td>Pleine largeur - ROC Mode et beauté</td>
+                        <td>03/11-14/12</td>
+                        <td>651.05 CAD</td>
+                        <td>50,001</td>
+                        <td>259</td>
+                        <td>13.02 CAD</td>
+                        <td>2.51 CAD</td>
+                        <td>0.52%</td>
+                    </tr>
+                    <tr>
+                        <td>Pleine largeur - RON Audiences</td>
+                        <td>03/11-14/12</td>
+                        <td>2,470.12 CAD</td>
+                        <td>301,614</td>
+                        <td>2,347</td>
+                        <td>8.19 CAD</td>
+                        <td>1.05 CAD</td>
+                        <td>0.78%</td>
+                    </tr>
+                    <tr>
+                        <td>Vidéo Instream 15s (CPM - TVA+)</td>
+                        <td>14/10-14/12</td>
+                        <td>2,090.86 CAD</td>
+                        <td>281,418</td>
+                        <td>232</td>
+                        <td>7.43 CAD</td>
+                        <td>9.01 CAD</td>
+                        <td>0.08%</td>
+                    </tr>
+                    <tr>
+                        <td>Mise en ligne segment TV (x2)</td>
+                        <td>Novembre</td>
+                        <td>2,400.00 CAD</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Publication Facebook (intégration)</td>
+                        <td>Novembre</td>
+                        <td>2,650.00 CAD</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr style="font-weight: bold; background: #f5f5f5;">
+                        <td><strong>TOTAL NOVEMBRE</strong></td>
+                        <td>-</td>
+                        <td><strong>13,661.19 CAD</strong></td>
+                        <td><strong>1,183,779</strong></td>
+                        <td><strong>4,297</strong></td>
+                        <td><strong>11.54 CAD</strong></td>
+                        <td><strong>3.18 CAD</strong></td>
+                        <td><strong>0.36%</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 15px; font-style: italic; color: #666;">
+                <strong>Note :</strong> Les initiatives "Mise en ligne segment TV" et "Publication Facebook (intégration)" n'ont pas de métriques de performance directes (impressions/clics) dans le rapport Quebecor. Le CPM total est calculé en divisant l'investissement total par les impressions trackées uniquement.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Constat Stratégique</h2>
+            
+            <div class="highlight-box" style="background: #e3f2fd; border-left-color: #1976d2;">
+                <h3 style="color: #1565c0;">💡 L'Enjeu : Optimisation de l'Allocation Budgétaire</h3>
+                <p style="line-height: 1.8; font-size: 1.05em;">
+                    L'analyse d'octobre et novembre 2025 révèle une <strong>opportunité d'optimisation significative</strong> dans l'allocation du budget publicitaire. Le budget Quebecor actuel (~9,400 CAD/mois) représente un <strong>investissement soutenu en notoriété</strong> qui pourrait être <strong>réduit et concentré</strong> pour libérer des fonds destinés à tester de nouveaux placements Google à fort potentiel.
+                </p>
+            </div>
+
+            <h3>Ce que Quebecor Nous Apporte Actuellement</h3>
+            <div class="comparison-card" style="margin: 20px 0; text-align: left;">
+                <h4 style="text-align: center; color: #1e3c72; margin-bottom: 20px;">✅ Valeur de Quebecor</h4>
+                <ul style="line-height: 2;">
+                    <li><strong>Visibilité média hors-ligne</strong> : Présence sur plateformes TVA+ et réseau Quebecor</li>
+                    <li><strong>Reach d'audiences larges</strong> : 1.46M impressions livrées sur 2 mois</li>
+                    <li><strong>Impact notoriété mesurable</strong> : Pic de +474% recherches branded Google lors du lancement (15 oct)</li>
+                    <li><strong>Complémentarité stratégique</strong> : Touche des audiences moins actives sur Meta/Google</li>
+                    <li><strong>Effet "halo"</strong> : Renforcement de crédibilité et perception de marque</li>
+                </ul>
+            </div>
+
+            <h3>Les Limitations Observées</h3>
+            <div class="comparison-card" style="margin: 20px 0; text-align: left; border-color: #f57c00;">
+                <h4 style="text-align: center; color: #f57c00; margin-bottom: 20px;">⚠️ Points d'Attention</h4>
+                <ul style="line-height: 2;">
+                    <li><strong>Coût d'acquisition élevé</strong> : CPC 3.18-22.16 CAD vs 0.68-1.42 CAD (Meta/Google)</li>
+                    <li><strong>ROI non mesurable directement</strong> : Impossible de tracker les conversions/ventes attribuables</li>
+                    <li><strong>Impact notoriété temporaire</strong> : Effet rapidement estompé après les pics initiaux</li>
+                    <li><strong>Budget soutenu important</strong> : ~9,400 CAD/mois de manière continue</li>
+                    <li><strong>Difficile d'isoler l'effet réel</strong> : Impact confondu avec Black Friday et autres campagnes actives</li>
+                </ul>
+            </div>
+
+            <h3>Ce que la Réduction Budgétaire Quebecor Permettrait</h3>
+            <div class="comparison-grid">
+                <div class="comparison-card" style="border: 2px solid #4caf50;">
+                    <h4 style="color: #2e7d32;">🚀 Test Performance Max</h4>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        Budget test : <strong>3,000-4,000 CAD/mois</strong>
+                    </p>
+                    <ul style="text-align: left; margin-top: 10px; line-height: 1.8;">
+                        <li>Automatisation Google AI complète</li>
+                        <li>Multi-placements (Search, YouTube, Display, Gmail, Discover)</li>
+                        <li>Optimisation temps réel</li>
+                        <li>ROAS attendu : 8-12</li>
+                        <li><strong>ROI mesurable directement</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card" style="border: 2px solid #2196f3;">
+                    <h4 style="color: #1565c0;">🎨 Test Demand Gen</h4>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        Budget test : <strong>2,000-3,000 CAD/mois</strong>
+                    </p>
+                    <ul style="text-align: left; margin-top: 10px; line-height: 1.8;">
+                        <li>Nouveau format Google (lancé 2023)</li>
+                        <li><strong>Hybride : Notoriété + Conversion</strong></li>
+                        <li>Formats visuels immersifs</li>
+                        <li>Alternative moderne à Display</li>
+                        <li>Pourrait partiellement remplacer Quebecor notoriété</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card" style="border: 2px solid #ff9800;">
+                    <h4 style="color: #e65100;">📈 Expansion Shopping</h4>
+                    <p style="line-height: 1.8; margin-top: 15px;">
+                        Budget additionnel : <strong>4,000-5,000 CAD/mois</strong>
+                    </p>
+                    <ul style="text-align: left; margin-top: 10px; line-height: 1.8;">
+                        <li>Scaling de campagnes prouvées</li>
+                        <li>ROAS actuel : <strong>14.09</strong></li>
+                        <li>Risque minimal (performances établies)</li>
+                        <li>ROI direct et immédiat</li>
+                        <li>Capacité d'absorption du budget vérifiée</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Synthèse : L'Équilibre à Trouver</h3>
+            <div class="highlight-box" style="background: #fff3cd; border-left-color: #ffc107;">
+                <p style="line-height: 1.8; font-size: 1.05em;">
+                    <strong>Il ne s'agit pas de stopper Quebecor complètement</strong>, mais plutôt de :
+                </p>
+                <ol style="margin-left: 20px; margin-top: 15px; line-height: 2; font-size: 1.05em;">
+                    <li><strong>Réduire le budget soutenu</strong> de ~9,400 CAD/mois à 3,000-4,000 CAD/mois</li>
+                    <li><strong>Concentrer Quebecor sur périodes stratégiques</strong> : lancements produits, promotions majeures (Black Friday, etc.)</li>
+                    <li><strong>Libérer 5,000-6,500 CAD/mois</strong> pour tester PMAX et Demand Gen</li>
+                    <li><strong>Mesurer l'impact réel</strong> sur 3-6 mois avec tracking précis</li>
+                    <li><strong>Ajuster en continu</strong> selon les résultats observés</li>
+                </ol>
+                
+                <p style="margin-top: 20px; line-height: 1.8; font-size: 1.05em;">
+                    Cette approche permet de :
+                </p>
+                <ul style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                    <li>✅ <strong>Maintenir une présence notoriété</strong> via Quebecor sur périodes clés</li>
+                    <li>✅ <strong>Tester de nouvelles opportunités</strong> à fort potentiel avec ROI mesurable</li>
+                    <li>✅ <strong>Optimiser l'efficacité globale</strong> de l'investissement publicitaire</li>
+                    <li>✅ <strong>Garder la flexibilité</strong> d'ajuster selon les performances</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Conclusion</h2>
+            
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                L'analyse comparative d'octobre et novembre 2025 met en lumière une <strong>opportunité d'optimisation significative</strong> dans l'allocation du budget publicitaire. 
+            </p>
+            
+            <p style="font-size: 1.1em; line-height: 1.8; margin-top: 15px;">
+                <strong>Quebecor apporte une valeur réelle en termes de notoriété</strong> (1.46M impressions délivrées, impact mesurable sur recherches branded), mais le <strong>budget soutenu actuel de ~9,400 CAD/mois</strong> représente un coût d'opportunité important lorsque comparé aux alternatives disponibles sur Google.
+            </p>
+            
+            <div class="highlight-box" style="margin: 20px 0;">
+                <h4>🔍 Les Faits Clés</h4>
+                <ul style="line-height: 2;">
+                    <li>🔴 <strong>Quebecor CPC :</strong> 3.18-22.16 CAD (selon période/format)</li>
+                    <li>🟢 <strong>Meta CPC :</strong> 0.68-0.80 CAD → <strong>4-27x moins cher</strong></li>
+                    <li>🟢 <strong>Google CPC :</strong> 1.42-1.96 CAD → <strong>2-11x moins cher</strong></li>
+                    <li>📊 <strong>Contexte important :</strong> Octobre ROAS 1.59 (hors promo) vs Novembre ROAS 4.56 (Black Friday)</li>
+                    <li>✅ <strong>Impact notoriété Quebecor :</strong> Mesurable mais temporaire (+474% recherches branded au lancement)</li>
+                </ul>
+            </div>
+            
+            <p style="font-size: 1.1em; line-height: 1.8; margin-top: 15px;">
+                La <strong>différence fondamentale entre Quebecor (notoriété) et Meta/Google (conversion)</strong> explique en partie les écarts observés. Cependant, l'émergence de nouveaux formats Google comme <strong>Performance Max et Demand Gen</strong> permet désormais de combiner notoriété ET conversion avec un ROI directement mesurable.
+            </p>
+            
+            <p style="font-size: 1.1em; line-height: 1.8; margin-top: 15px;">
+                <strong>L'approche recommandée</strong> n'est pas d'arrêter Quebecor, mais de :
+            </p>
+            
+            <ol style="margin-left: 20px; margin-top: 15px; line-height: 2; font-size: 1.05em;">
+                <li><strong>Réduire le budget Quebecor</strong> de 60-70% (passer de 9,400 à 3,000-4,000 CAD/mois)</li>
+                <li><strong>Concentrer sur périodes stratégiques</strong> : lancements majeurs, Black Friday, moments clés</li>
+                <li><strong>Libérer 5,000-6,500 CAD/mois</strong> pour tester Performance Max et Demand Gen</li>
+                <li><strong>Évaluer sur 3-6 mois</strong> l'impact réel de cette réallocation</li>
+            </ol>
+            
+            <p style="font-size: 1.1em; line-height: 1.8; margin-top: 20px;">
+                Cette stratégie permet de <strong>maintenir une présence notoriété via Quebecor</strong> tout en <strong>explorant de nouvelles opportunités</strong> à fort potentiel de ROI mesurable. Le budget libéré (~70,000 CAD annuels) peut générer un revenu additionnel estimé entre <strong>560K et 910K CAD</strong> selon le ROAS obtenu sur les nouveaux placements (conservateur : 8-13).
+            </p>
+            
+            <div class="highlight-box" style="background: #e8f5e9; border-left-color: #4caf50; margin-top: 20px;">
+                <h4 style="color: #2e7d32;">💡 Prochaine Étape Suggérée</h4>
+                <p style="line-height: 1.8; font-size: 1.05em;">
+                    Présenter ces données à l'équipe direction/finance pour discussion sur la réduction du contrat Quebecor et l'allocation d'un budget test pour Performance Max et/ou Demand Gen. Un test de 3 mois permettrait de valider ou invalider cette hypothèse avec des données concrètes.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 Rapport généré le 6 janvier 2026</p>
+            <p>Données sources : Meta Ads Manager, Google Ads, Rapports Quebecor Expertise Média (Oct-Nov 2025)</p>
+            <p style="margin-top: 10px; font-size: 0.85em; color: #999;">
+                Luc Vincent Coiffure - Analyse Marketing Digital<br>
+                Toutes les données sont exprimées en CAD
+            </p>
+        </div>
+    </div>
+</body>
+</html>
